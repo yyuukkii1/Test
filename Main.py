@@ -1,9 +1,17 @@
 from Classes import Sheep as S
-S1 = S.Sheep(3, 5)
-S2 = S.Sheep(3, 3)
-S3 = S.Sheep(3, 7)
-S1.PrintPosition()
-S1.Move(4, 5)
-S1.PrintPosition()
-S1.Move(-4, -5)
-S1.PrintPosition()
+from Classes import Field as F
+
+
+Field = F.Field(500, 500)
+
+S1 = S.Sheep(3, 5, 2, Field)
+Field.Sheeps.append(S1)
+S2 = S.Sheep(3, 3, 2, Field)
+Field.Sheeps.append(S2)
+S3 = S.Sheep(3, 7, 2, Field)
+Field.Sheeps.append(S3)
+
+S3.PrintAllPositions()
+
+
+

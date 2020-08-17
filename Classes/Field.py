@@ -1,3 +1,6 @@
 class Field:
-    def space(self):
-        print ("sheep")
+    def __init__(self, height, width):
+        self.height =  height
+        self.width = width
+        self.Sheeps = []
+
