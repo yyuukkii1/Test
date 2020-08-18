@@ -11,6 +11,10 @@ Field.Sheeps.append(S2)
 S3 = S.Sheep(3, 7, 2, Field)
 Field.Sheeps.append(S3)
 
+
+
+S1.Move(3)
+
 S3.PrintAllPositions()
 
 
